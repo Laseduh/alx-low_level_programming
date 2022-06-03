@@ -7,15 +7,15 @@
 int main(void)
 {
 	int i;
-	double d;
+	long long int d;
 	char c;
 	float z;
 	long int w;
 
-	printf("size of an int is: %lu.\n", sizeof (i));
-	printf("size of a double is: %lu.\n", sizeof (d));
-	printf("size of a char is: %lu.\n", sizeof (c));
-	printf("size of a float is: %lu.\n", sizeof (z));
-	printf("size of a long int is: %lu.\n", sizeof (w));
+	printf("size of an int is: %lu.\n", sizeof(i));
+	printf("size of a long long is: %lu.\n", sizeof(d));
+	printf("size of a char is: %lu.\n", sizeof(c));
+	printf("size of a float is: %lu.\n", sizeof(z));
+	printf("size of a long int is: %lu.\n", sizeof(w));
 	return (0);
 }
