@@ -5,20 +5,29 @@
  */
 int main(void)
 {
-	int i, j;
+	int n, m, l;
 
-	for (i = 0; i < 10; i++)
-
+	for (n = 48; n < 58; n++)
 	{
-		for (j = i + 1;  j < 10; j++)
+		for (m = 49; m < 58; m++)
 		{
-			putchar(i + '0');
-			putchar(j + '0');
-			if ((i == 8) && (j == 9))
-			putchar(',');
-			putchar(' ');
+			for (l = 50; l < 58; l++)
+			{
+				if (l > m && m > n)
+				{
+					putchar(n);
+					putchar(m);
+					putchar(l);
+					if (n != 55 || m != 56)
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
+			}
 		}
 	}
 	putchar('\n');
 	return (0);
 }
+
