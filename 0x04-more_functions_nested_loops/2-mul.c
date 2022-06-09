@@ -2,13 +2,14 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * main - mul function
  *
- * Return: Always 0.
+ * @a: parameter of type int, a
+ * @b: parameter of type int, b
+ *
+ * Return: returns the answer.
  */
-int main(void)
+int mul(int a, int b)
 {
-	printf("%d\n", mul(98, 1024));
-	printf("%d\n", mul(-402, 4096));
-	return (0);
+	return (a * b);
 }
