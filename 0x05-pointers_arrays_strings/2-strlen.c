@@ -6,13 +6,13 @@
  *
  * Return: Always 0.
  */
-int main(void)
+int _strlen(char *str);
 {
-	char *s;
+	char *str;
 	int len;
 
-	s = "My first strlen!";
-	len = _strlen(s);
+	str = "My first strlen!";
+	len = _strlen(str);
 	printf("%d\n", len);
 	return (0);
 }
