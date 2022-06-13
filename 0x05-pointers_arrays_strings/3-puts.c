@@ -1,15 +1,20 @@
 #include "main.h"
+#include <unistd.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * _puts - prints a string, to stdout
+ * @str: value to be evaluate.
+ * Return: not.
  */
-void _puts(char *str);
-{
-	char *str;
 
-	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-	_puts(str);
-	return (0);
+void _puts(char *str)
+{
+	int l = 0;
+
+	while (*(str + l) != '\0')
+	{
+		_putchar(str[l]);
+		l++;
+	}
+	_putchar('\n');
 }
