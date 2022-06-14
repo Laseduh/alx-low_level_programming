@@ -17,5 +17,5 @@ void print_rev(char *s)
 	{
 		_putchar(s[live]);
 	}
-	_putchar(s[live]);
+	_putchar('\n');
 }
