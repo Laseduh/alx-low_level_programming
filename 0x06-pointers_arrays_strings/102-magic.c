@@ -3,10 +3,11 @@
 /**
  * main - Entry point
  *
- * prints followed by a new line.
+ * Description - prints followed by new line
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 	int n;
