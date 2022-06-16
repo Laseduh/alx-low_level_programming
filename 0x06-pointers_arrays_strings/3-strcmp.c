@@ -9,16 +9,19 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int a;
+	int i;
 
-	a = 0;
-	while (s1[a] != '\0' && s2[a] != '\0')
+	/**
+	 * We have reached the end of S1 OR we have reached the end of S2
+	 *
+	 */
+
+	for (i = 0; s1[i] != '\0' || s2[i] != '\0'; i++)
 	{
-		if (s1[a] != s2[a])
+		if (s1[i] != s2[i])
 		{
-			return (s1[a] != s2[a]);
+			return (s1[i] - s2[i]);
 		}
-		a++;
 	}
 	return (0);
 }
