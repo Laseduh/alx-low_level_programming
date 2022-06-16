@@ -7,20 +7,22 @@
  */
 void print_number(int n)
 {
-	int divisor = 1, i, resp;
+	unsigned int num;
 
+	/* print - infront of negative numbers */
 	if (n < 0)
 	{
 		_putchar('-');
-		n *= -1;
+		num = -n;
 	}
-
-	for (i = 0; n / divisor > 9; i++, divisor *= 10)
-		;
-
-	for (; divisor >= 1; n %= divisor, divisor /= 10)
+	else
 	{
-		resp = n / divisor;
-		_putchar('0' + resp);
+		num = n;
 	}
+	/* print the digits infront of the current digit */
+	if (num / 10)
+		print_number(num / 10);
+
+	/* print current digit */
+	_putchar((num % 10) + '0');
 }
