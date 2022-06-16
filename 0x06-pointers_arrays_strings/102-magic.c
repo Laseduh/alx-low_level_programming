@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * prints a[2] = 98, followed by a new line.
+ * prints followed by a new line.
  *
  * Return: Always 0 (Success)
  */
